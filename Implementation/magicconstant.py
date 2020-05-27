@@ -204,7 +204,7 @@ def formingMagicSquare(s):
             scopy[2][0] = old_val
         else:
             #cost += current_cost
-            cost += abs(old_val - scopy[2][0])
+            cost += abs(old_val - scopy[2][0])14
 
         # column 2
         #if sum_col2(scopy) != m:
@@ -381,25 +381,37 @@ def sum_col2(scopy):
 def sum_col3(scopy):
     return scopy[0][2] + scopy[1][2] + scopy[2][2]
 
-def sum_line(sums, square, m, scopy, row_index = -1):
+def sum_line(square, m, scopy, sum_torun = None, row_index = -1):
     current_cost = 0
     old_val = square
-    for current_sum in sums:
-        current_result = current_sum(scopy)
-        if current_result != m:
-            print(f"****current result: {current_result}")
-            square = m - (current_result - square)
-            print(f"square is now: {square}")
-    # if we are calculating a sum for a row as well
+    # if we have a row sum
     if row_index != -1:
-        row_sum = sum(scopy[row_index])
-        if row_sum != m:
-            square = m - (row_sum - square)
-            print(f"square is now: {square}")
-    print(f"old val is: {old_val}")
+        current_sum = sum(scopy[0])
+    else:
+        current_sum = sum_torun(scopy)
+    # calculate new
     current_cost += abs(old_val - square)
-    print(f"current cost @ function is: {current_cost}")
     return current_cost
+
+# def sum_line(sums, square, m, scopy, row_index = -1):
+#     current_cost = 0
+#     old_val = square
+#     for current_sum in sums:
+#         current_result = current_sum(scopy)
+#         if current_result != m:
+#             print(f"****current result: {current_result}")
+#             square = m - (current_result - square)
+#             print(f"square is now: {square}")
+#     # if we are calculating a sum for a row as well
+#     if row_index != -1:
+#         row_sum = sum(scopy[row_index])
+#         if row_sum != m:
+#             square = m - (row_sum - square)
+#             print(f"square is now: {square}")
+#     print(f"old val is: {old_val}")
+#     current_cost += abs(old_val - square)
+#     print(f"current cost @ function is: {current_cost}")
+#     return current_cost
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
