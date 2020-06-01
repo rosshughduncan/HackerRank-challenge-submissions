@@ -1,0 +1,3 @@
+C:\Users\RossDuncan3\Dropbox\HackerRank challenge submissions\HackerRank VS Solutions\HackerRank VS Solutions\obj\Debug\HackerRank VS Solutions.njsproj.CoreCompileInputs.cache
+C:\Users\RossDuncan3\Dropbox\HackerRank challenge submissions\HackerRank VS Solutions\HackerRank VS Solutions\bin\Microsoft.NodejsTools.WebRole.dll
+C:\Users\RossDuncan3\Dropbox\HackerRank challenge submissions\HackerRank VS Solutions\HackerRank VS Solutions\obj\Debug\HackerRank VS Solutions.njsprojAssemblyReference.cache

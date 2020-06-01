@@ -11,7 +11,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>3cfc8918-02e3-43bf-baf1-8e226b5a3a77</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>app.js</StartupFile>
+    <StartupFile>Implementation\queensAttackII.js</StartupFile>
     <StartWebBrowser>False</StartWebBrowser>
     <SearchPath>
     </SearchPath>
@@ -28,9 +28,16 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="app.js" />
+    <Content Include="Implementation\queensAttackII.js" />
+    <Content Include="MadeTech assessment\markdownParser.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="package.json" />
     <Content Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Implementation\" />
+    <Folder Include="MadeTech assessment\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
 </Project>
